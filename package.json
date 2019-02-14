@@ -1,0 +1,40 @@
+{
+  "name": "search-bar-react",
+  "version": "1.0.0",
+  "description": "React Search Bar",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "keywords": [
+    "react",
+    "search",
+    "bar",
+    "instagram",
+    "mobile"
+  ],
+  "author": "Darwin Bonfante",
+  "license": "ISC",
+  "dependencies": {
+    "@emotion/core": "^10.0.7",
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "react": "^16.8.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.29.3",
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.0-beta.6",
+    "babel-plugin-emotion": "^10.0.7",
+    "webpack-cli": "^3.2.3"
+  }
+}
