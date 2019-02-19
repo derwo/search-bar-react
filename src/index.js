@@ -117,6 +117,12 @@ class SearchBar extends Component {
     if(this.props.onFocus) this.props.onFocus()
   }
 
+  handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      this.searchBar.blur()
+    }
+  }
+
   handleChangedInput = (event) => {
     const text = event.target.value
     this.setState({
@@ -407,6 +413,7 @@ class SearchBar extends Component {
         alt={this.state.placeholder}
         placeholder={this.state.placeholder}
         onFocus={this.handleFocus}
+        onKeyPress={this.handleKeyPress}
         onChange={(e) => this.handleChangedInput(e)} value={this.state.searchText}
         ref={(input) => { this.searchBar = input }} 
       />
